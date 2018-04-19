@@ -238,7 +238,7 @@ a#down_arrow
 
 #about .card
 {
-    height: 20px;
+    min-height: 150px;
     min-width: 250px;
     overflow: hidden;
 }
@@ -494,6 +494,11 @@ footer p
         width: 200px;
     }
 
+    .card ul
+    {
+        padding: 0px 15px;
+    }
+
     #about, #portfolio, #contact
     {
         display: -webkit-box;
@@ -506,6 +511,12 @@ footer p
         min-height: 450px;
         margin: 0;
         padding: 10px;
+    }
+
+    #about .card
+    {
+        min-height: 180px;
+        max-height: 300px;
     }
 
     .content{
