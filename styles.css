@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round|Encode+Sans:400,600');
+
+
+html
+{
+    font-family: 'Varela Round', sans-serif;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, .4);
+    margin: 10px;
+}
+
+h2
+{
+    display: block;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    margin-left: 10px;
+    width: 15%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    color: black;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+}
+
+ul 
+{
+    list-style: none;
+    padding-left: 0;
+    margin: 5px;
+    margin-top: 15px;
+    -webkit-columns: 2;
+            columns: 2;
+    -webkit-column-width: 100px;
+            column-width: 100px;
+}
+  
+ul li:before 
+{
+    content: '✓';
+    color: green;
+    padding: 5px;
+}
+
+#hero
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    position: relative;
+    height: 100vh;
+    padding: 1px;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: white;
+    background: 
+        -webkit-gradient(
+            linear,
+            left top, left bottom,
+            from(rgba(10%, 10%, 10%, .7)),
+            to(rgba(10%, 10%, 10%, .7))
+        ),
+        url('./code-clement-h-544786-unsplash.jpg') center no-repeat;
+    background: 
+        -webkit-linear-gradient(
+            rgba(10%, 10%, 10%, .7),
+            rgba(10%, 10%, 10%, .7)
+        ),
+        url('./code-clement-h-544786-unsplash.jpg') center no-repeat;
+    background: 
+        -o-linear-gradient(
+            rgba(10%, 10%, 10%, .7),
+            rgba(10%, 10%, 10%, .7)
+        ),
+        url('./code-clement-h-544786-unsplash.jpg') center no-repeat;
+    background: 
+        linear-gradient(
+            rgba(10%, 10%, 10%, .7),
+            rgba(10%, 10%, 10%, .7)
+        ),
+        url('./code-clement-h-544786-unsplash.jpg') center no-repeat;
+    background-size: cover;    
+}
+
+#hero nav
+{
+    opacity: 0;
+    position: absolute;
+    top: 5%;
+    left: 75%;
+    -webkit-animation: fadeIn .65s ease-in 1s 1 forwards;
+            animation: fadeIn .65s ease-in 1s 1 forwards;
+}
+
+#hero h1
+{
+    font-size: 5rem;
+    -webkit-animation: fadeIn .65s ease-in 1 forwards;
+            animation: fadeIn .65s ease-in 1 forwards;
+}
+
+#hero p
+{
+    font-size: 1.75rem;
+    opacity: 0;
+    -webkit-animation: fadeIn .65s ease-in .25s 1 forwards;
+            animation: fadeIn .65s ease-in .25s 1 forwards;
+}
+
+#hero > a
+{
+    opacity: 0;
+    margin: 0;
+    margin-top: 100px;
+    -webkit-animation: fadeIn 1s ease-in 2s 1 forwards;
+            animation: fadeIn 1s ease-in 2s 1 forwards;
+}
+
+a#down_arrow
+{
+    margin: 5px;
+}
+
+#hero > a#down_arrow::after
+{
+    content: " ";
+    border: solid rgba(255, 255, 255, .4);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.content
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-flex: 3;
+        -ms-flex: 3 0 100%;
+            flex: 3 0 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: -15%;
+}
+
+.card
+{
+    display: block;
+    margin: 10px;
+    min-height: 180px;
+    width: 175px;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 5px gray;
+            box-shadow: 2px 2px 5px gray;
+    background-color:white;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+
+.card:hover
+{
+    -webkit-transition: -webkit-box-shadow .5s ease-in-out;
+    transition: -webkit-box-shadow .5s ease-in-out;
+    -o-transition: box-shadow .5s ease-in-out;
+    transition: box-shadow .5s ease-in-out;
+    transition: box-shadow .5s ease-in-out, -webkit-box-shadow .5s ease-in-out;
+	-webkit-box-shadow: 3px 4px 6px gray;
+			box-shadow: 3px 4px 6px gray;
+}
+
+.card img
+{
+	width: 100%;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.card h3, .card p, .card ul
+{
+    padding: 0px 10px;
+}
+
+
+#about, #portfolio, #contact
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    min-height: 300px;
+    margin: 0;
+    padding: 10px;
+}
+
+#about
+{
+    background-color: #FED766;
+}
+
+#about h2
+{
+    color: rgba(0, 0, 0, .75);
+}
+
+#about .card
+{
+    height: 20px;
+    min-width: 250px;
+    overflow: hidden;
+}
+
+#about .card h3
+{
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, .8);
+    background-color: green;
+}
+
+#about .card:first-child h3
+{
+    background-color: #9E1F38;
+}
+
+#contact
+{
+    color: rgba(255, 255, 255, .9);
+    background-color: rgb(30, 108, 204);
+}
+
+#contact h2
+{
+    color: rgba(255, 255, 255, .9);
+}
+
+#contact .content
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    text-align: center;
+}
+
+#contact h3
+{
+    font-size: 3rem;
+    margin: 0;
+}
+
+#contact_btn
+{
+    font-family: 'Varela Round', sans-serif;
+    width: 15%;
+    padding: 10px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: rgba(255, 255, 255, .9);
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    -webkit-transition: background-color 1s, color 1s;
+    -o-transition: background-color 1s, color 1s;
+    transition: background-color 1s, color 1s;
+}
+
+#contact_btn:hover
+{
+    color: rgb(30, 108, 204);
+    background-color: rgba(255,255,255,0.9);
+}
+
+#modal
+{
+    display: none;
+    position: fixed;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    /* transition: opacity 1s; */
+}
+
+.show
+{
+    opacity: 1;
+}
+
+#modalContent
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+#modal form
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    margin: auto;
+    width: 30%;
+}
+
+#modal form input, #modal form button, textarea
+{
+    font-family: 'Varela Round', sans-serif;
+    margin: 5px;
+}
+
+#modal input
+{
+    width: 45%;
+}
+
+#modalContent button
+{
+    width: 25%;
+    padding: 5px;
+    background-color: green;
+    border: none;
+    color: rgba(255, 255, 255, .7);
+    border-radius: 5px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+
+#closeModal
+{
+    font-size: 2.5rem;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+footer
+{
+    color: rgba(255, 255, 255, .4);
+    background-color: #404145;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a
+{
+    color: black;
+    margin: 0;
+}
+
+footer p
+{
+    margin: 5px;
+}
+
+
+@-webkit-keyframes fadeIn
+{
+    0% 
+    {
+        opacity: 0;
+        -webkit-transform: translateY(-8px);
+                transform: translateY(-8px);
+    }
+
+    100% 
+    {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+        
+    }
+}
+
+
+@keyframes fadeIn
+{
+    0% 
+    {
+        opacity: 0;
+        -webkit-transform: translateY(-8px);
+                transform: translateY(-8px);
+    }
+
+    100% 
+    {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+        
+    }
+}
+
+@media screen and (max-width: 1400px)
+{
+    #hero nav
+    {
+        left: 60%;
+    }
+
+    #hero h1, #hero p
+    {
+        font-size: 125%;
+    }
+
+    h2
+    {
+        display: block;
+        min-width: 150px;
+    }
+
+    .content
+    {
+        margin-left: -20%;
+    }
+}
+
+@media screen and (max-width: 750px)
+{
+    nav
+    {
+        display: none;
+    }
+
+    #hero h1, #hero p
+    {
+        font-size: 125%;
+    }
+
+    h2
+    {
+        display: inline-block;
+        font-size: 100%;
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+        margin-right: 10%;
+        width: 200px;
+    }
+
+    #about, #portfolio, #contact
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+        min-height: 450px;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .content{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        margin: 0;
+        flex: 1 1 auto;
+    }
+
+    #contact .content
+    {
+        font-size: 80%;
+    }
+
+    #contact h3
+    {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    #contact button
+    {
+        width: 100px;
+    }
+
+    #modal form
+    {
+        width: 80%;
+    }
+}

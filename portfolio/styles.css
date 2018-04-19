@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round|Quicksand');
+
+body
+{
+	font-family:  'Varela Round', sans-serif;
+	background-color: rgb(238, 237, 230);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+
+}
+
+nav
+{
+	background-color: white;
+	border-radius: 3px;
+	text-align:center;
+	width: 20%;
+	
+	-webkit-box-shadow: 2px 2px 3px gray;
+	        box-shadow: 2px 2px 3px gray;
+
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+a
+{
+	color: rgb(255, 255, 255);
+}
+
+a.demo_button
+{
+	display: inline-block;
+	border: 1px solid black;
+	background-color: black;
+	margin: 10px 0px;
+	padding: 5px 20px;
+	text-decoration: none;
+}
+
+h2
+{
+	border-bottom: 1px double rgba(114, 109, 109, 0.233);
+}
+
+nav a
+{
+	text-decoration: none;
+	padding: 5px;
+	margin: .25rem 1rem;
+	color: black;
+	display:inline-block;
+	
+	-webkit-transition: background-color .3s, color .3s;
+	-o-transition: background-color .3s, color .3s;
+		transition: background-color .3s, color .3s;
+
+}
+
+nav a:hover
+{
+	background-color: black;
+	color:white;
+}
+
+#content
+{
+	margin: 5% 30px;
+}
+
+#main
+{
+	text-align: center;
+}
+
+.portfolio
+{
+	margin: 5% 15%;
+	text-align: left;
+}
+
+.card
+{
+	display: inline-block;
+	margin: 5px;
+	background-color: white;
+	border-radius: 3px;
+	width: 175px;
+	-webkit-box-shadow: 2px 2px 3px gray;
+			box-shadow: 2px 2px 3px gray;
+			
+	-webkit-transition:  box-shadow .1s ease-in-out;
+	-o-transition:  box-shadow .1s ease-in-out;			
+		transition: box-shadow .1s ease-in-out;
+}
+
+.card:hover
+{
+	-webkit-box-shadow: 3px 4px 6px gray;
+			box-shadow: 3px 4px 6px gray;
+}
+
+.card img
+{
+	width: 100%;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.cardContent
+{
+	padding: 10px;
+}
+
+.cardContent > p
+{
+	font-size: .85rem;
+}
+
+h3.cardTitle
+{
+	margin: 5px 0px;
+}
+
+#portfolio_details
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#portfolio_images
+{
+	/* border: 1px solid black; */
+	max-width: 30%;
+}
+
+#portfolio_images > img
+{
+	max-width: 100px;
+	max-height: 100px;
+	object-fit: cover;
+	margin: 5px;
+	border: 3px solid white;
+
+	-webkit-box-shadow: 2px 2px 3px gray;
+			box-shadow: 2px 2px 3px gray;
+
+	-webkit-transition:  box-shadow .1s ease-in-out;
+	-o-transition:  box-shadow .1s ease-in-out;			
+		transition: box-shadow .1s ease-in-out;
+}
+
+#portfolio_images > img:hover
+{
+	-webkit-box-shadow: 4px 5px 6px gray;
+			box-shadow: 4px 5px 6px gray;
+}
+
+#details
+{
+	text-align: left;
+	margin: 0 2em;
+}
+
+.tag
+{
+	display: inline-block;
+	background-color: white;
+	border-radius: 5px;
+	font-size: 60%;
+	overflow: hidden;
+	/* padding: 5px; */
+}
+
+.tag span:first-child
+{
+	display: inline-block;
+	padding: 5px 0px 5px 5px;
+}
+
+.tag .ico
+{
+	display: inline-block;
+	color: white;
+	height: 100%;
+	padding: 5px;
+}
+
+.html5
+{
+	background-color: #E54B18;
+}
+
+.css3
+{
+	background-color: #006EBE;
+}
+
+
+@media screen and (max-width: 850px) {
+
+	nav
+	{
+		width: 80%;
+		margin: 0 10%;
+	}
+
+	nav a
+	{
+		display: block;
+		margin: 5px;
+		padding: 5px;
+	}
+
+	a
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+	#content
+	{
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	#portfolio_images
+	{
+		max-width: 100%;
+		text-align: center;
+	}
+
+	#portfolio_details
+	{
+		display: block;
+	}
+	
+}

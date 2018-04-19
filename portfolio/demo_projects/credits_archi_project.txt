@@ -1,0 +1,25 @@
+Construction photo => <span>Photo by<a href="https://unsplash.com/photos/PlBsJ5MybGc?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tolu Olubode</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+Balconies White building => <span>Photo by<a href="https://unsplash.com/photos/jTCLppdwSEc?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Grant Lemons</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+Banner Stairs => <span>Photo by <a href="https://unsplash.com/photos/x5tVBbQ3G-4?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Christopher Burns</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+L cieling building => <span>Photo by <a href="https://unsplash.com/photos/j75Y1ihna34?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tiago Almeida</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+Modern House => <span>Photo by <a href="https://unsplash.com/photos/iv77yw43cAI?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ehud Neuhaus</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+Office Building External => <span>Photo by <a href="https://unsplash.com/photos/m2al31jsj_k?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rob Bye</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+Art Muesum => <span>Photo by <a href="https://unsplash.com/photos/4fYclIw3Dvg?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nigel Tadyanehondo</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+The Tate building => <span>Photo by <a href="https://unsplash.com/photos/8jwDkIUYq3g?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Joshua Fuller</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+Architecure Monochrome Building=> <span>Photo by <a href="https://unsplash.com/photos/dSwjsxtDNbI?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Joel Filipe</a> on <a href="https://unsplash.com/photos/QRQydZxqhWs?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+Interior Glass/Roy Thomson Hall => <span>Photo by <a href="https://unsplash.com/photos/g8OgQYKT9e4?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Joel Filipe</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+People = > <span>Photo by <a href="https://unsplash.com/photos/YXemfQiPR_E?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nik MacMillan</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+interior slide =><span>Photo by <a href="https://unsplash.com/photos/LCJ9iOli-uE?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">gdtography</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+construction slide => <span>Photo by <a href="https://unsplash.com/photos/HtBlQdxfG9k?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Daniel McCullough</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>

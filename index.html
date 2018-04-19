@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cyril Mathew</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+
+    <div id="hero">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#portfolio">My Work</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+
+        <h1>HELLO!</h1>
+        <p>I'm Cyril Mathew and I build web applications</p>
+        
+        <a href="#about">Learn more</a>
+        <a href="#about" id="down_arrow"></a>
+    </div>
+
+    <div id="about">
+        <h2>About</h2>
+        <div class="content">
+            <div class="card">
+                <div class="cardContent">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="cardContent">
+                    <h3>Tools & Methodologies</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>SASS</li>
+                        <li>Agile</li>
+                        <li>JIRA</li>
+                        <li>Confluence</li>
+                        <li>Adobe Creative Suite</li>
+                        <li>Axure RP</li>
+                        <li>Sketch 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <h2>My Work</h2>
+        <div class="content">
+            <div class="card" id="archico_project">
+                <img src="archico_screenshot_small.png" alt="Archi Co. Screenshot">
+                <div class="cardContent">
+                    <h3 class="cardTitle">Archi Co.</h3>
+                    <p>Demo project based on a Photoshop mockup</p>
+                </div>
+            </div>
+            <div class="card" id="react_todolist">
+                <img src="react_todolist_screenshot_small.png" alt="React TodoList image">
+                <div class="cardContent">
+                    <h3 class="cardTitle">React Todo List</h3>
+                    <p>A todolist demo with CRUD features built with React</p>
+                </div>
+            </div>
+            <div class="card" id="ava">
+                <img src="audiovisualarchitects_small_screenshot.png" alt="Audio Visual Architects screenshot">
+                <div class="cardContent">
+                    <h3 class="cardTitle">Audio Visual Architects</h3>
+                    <p>Rebuilding all interactive content for client site</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h2>Contact Me</h2>
+        <div class="content">
+            <h3>Like what you see?</h3>
+            <p>I'd love to hear from you and discuss how I could help you </p>
+            <button id="contact_btn">Let's talk</button>
+
+            <div id="modal">
+                <div id="modalContent">
+                    <form action="mail.php" method="POST">
+                        <input type="text" name="name" aria-label="name" placeholder="Name" required>
+                        <input type="text" name="email" aria-label="email" placeholder="Email" required>
+                        <input type="tel" name="phone" aria-label="phone" placeholder="Phone Number">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+                        <button>Submit</button>
+                    </form>
+                </div>
+                <button id="closeModal">&times;</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Site designed & built by Cyril Mathew</p>
+        <p style="font-size:.75rem;">Hero image <span>by <a href="https://unsplash.com/photos/95YRwf6CNw8?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Clément H</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        
+        var archiCard = document.getElementById('archico_project');
+        archiCard.onclick = () => {
+            window.location.href="./portfolio/demo_projects/archico.html";
+        }
+        
+        var todoCard = document.getElementById('react_todolist');
+        todoCard.onclick = () => {
+            window.location.href="./portfolio/demo_projects/react_todolist/todolist.html";
+        }
+
+        var avaCard = document.getElementById('ava');
+        avaCard.onclick = () =>
+        {
+            window.location.href="./portfolio/freelance/ava/ava.html";
+        }
+
+        var contactButton = document.getElementById('contact_btn');
+        var contactModal = document.querySelector("#modal");
+        var closeModalButton = document.querySelector("#closeModal");
+        contactButton.onclick = () => (contactModal.style.display = "block");
+        closeModalButton.onclick = () => (contactModal.style.display = "none");
+
+
+        $("a").click(function() {
+            context = $(this)[0].attributes.href.value;
+            $('html, body').animate({
+                scrollTop: $(context).offset().top
+            }, 250);
+        });
+    </script>
+
+    
+</body>
+</html>
