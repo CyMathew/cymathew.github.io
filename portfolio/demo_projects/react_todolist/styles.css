@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans|Material+Icons');
+
 body
 {
 	font-family: 'Open Sans', 'sans-serif';
@@ -11,7 +11,8 @@ body
 {
 	background-color: white;
 	border: 1px solid gray;
-	box-shadow: 1px 1px 5px gray;
+	-webkit-box-shadow: 1px 1px 5px gray;
+	        box-shadow: 1px 1px 5px gray;
 	border-radius: 3px;
 	min-height: 20px;
 	margin:20px 30%;
@@ -40,6 +41,21 @@ body
 	outline:none;
 }
 
+#entry_field::-webkit-input-placeholder
+{
+	color: rgba(255,255,255, 0.7);
+}
+
+#entry_field:-ms-input-placeholder
+{
+	color: rgba(255,255,255, 0.7);
+}
+
+#entry_field::-ms-input-placeholder
+{
+	color: rgba(255,255,255, 0.7);
+}
+
 #entry_field::placeholder
 {
 	color: rgba(255,255,255, 0.7);
@@ -53,7 +69,8 @@ input[type="submit"], #edit_finish_btn
 	color: #1689D2;
 	background-color: white;
 	padding: 5px 8px;
-	box-shadow: 1px 2px 1px gray;
+	-webkit-box-shadow: 1px 2px 1px gray;
+	        box-shadow: 1px 2px 1px gray;
 }
 
 ul
