@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700');
+
+@font-face 
+{
+    font-family: "FreeSans";
+    src: url("./fonts/FreeSans.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: "FreeSans";
+    src:url("./fonts/FreeSansBold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: "FreeSans";
+    src: url("./fonts/FreeSansOblique.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family: "FreeSans";
+    src: url("./fonts/FreeSansBoldOblique.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family: "Butler";
+    src: url("./fonts/Butler_Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: "Butler";
+    src: url("./fonts/Butler_Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+body
+{
+    font-family: 'Helvetica Neue', 'FreeSans', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #262831;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.btn
+{
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    background-color: #005AA8;
+    margin: 20px 0px;
+    padding: 10px 25px;
+    border-radius: 2px;
+}
+
+a:visited
+{
+    color: black;
+}
+
+a.btn:visited 
+{
+    color: white;
+}
+
+.subtitle
+{
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0px;
+}
+
+.subtext
+{
+    font-size: 75%;
+}
+
+ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+li
+{
+    display: block;
+    padding: 5px;
+}
+
+h1, h2, h3, h4
+{
+    font-family: 'Butler', 'Times New Roman', serif;
+}
+
+h3
+{
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+#content_body
+{
+    margin: 40px;
+    background-color: white;
+    overflow: hidden;
+}
+
+section header
+{
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 5%;
+    padding-bottom: 30px;
+}
+
+
+
+/****************** NAV BAR **********************/
+#banner
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 30px;
+}
+
+#banner a
+{
+    margin: 5px; 
+}
+
+#banner_links
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0px;
+    width: 100px;
+}
+
+#banner_links img
+{
+    margin: 25px;
+    margin-left: 0px;
+    -ms-flex-preferred-size: 25px;
+        flex-basis: 25px;
+}
+
+#banner_links a
+{
+    display: inline-block;
+    margin: 10px;
+    display: none;
+}
+
+a.special
+{
+    background-color: #00CECB;
+}
+
+h1
+{
+    display: inline-block;
+    margin: auto;
+}
+
+#banner_btns
+{
+    display: none;
+}
+
+/****************** HERO *************************/
+
+#hero
+{
+    position: relative;
+    overflow: hidden;
+}
+
+#hero img
+{
+    display: block;
+    margin: 0px auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
+}
+
+#hero:after
+{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(
+        linear,
+        left top, left bottom,
+        from(rgba(0,0,0,.3)),
+        to(rgba(0,0,0,.3)));
+    background: -webkit-linear-gradient(
+        rgba(0,0,0,.3),
+        rgba(0,0,0,.3));
+    background: -o-linear-gradient(
+        rgba(0,0,0,.3),
+        rgba(0,0,0,.3));
+    background: linear-gradient(
+        rgba(0,0,0,.3),
+        rgba(0,0,0,.3));
+    z-index: 1;
+}
+
+#hero .details
+{
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    color: white;
+    z-index: 5;
+}
+
+
+h2
+{
+    display: block;
+    font-size: 40px;
+    margin: 0;
+}
+
+#event_date
+{
+    font-family: 'Butler', serif;
+    font-size: 20px;
+}
+
+/****************** FEATURED *********************/
+#featured header
+{
+    margin-bottom: 0px;
+}
+
+#featured_images
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+
+#featured_images figure
+{
+    margin: 15px 7px;
+    max-width: 300px;
+}
+
+#featured_images figure:nth-child(-n + 2)
+{
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+}
+
+#featured_images figure img
+{
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+}
+
+#featured_images figure figcaption
+{
+    font-family: 'Butler', serif;
+    color: white;
+    display: block;
+    margin-top: -40px;
+    text-align: center;
+    z-index: 2;
+    font-size: 20px;
+}
+
+/*fix for broken width on caption */
+
+#featured_images figure:nth-child(4) figcaption
+{
+    margin-left: -50px;
+}
+
+/****************** LINEUP ***********************/
+
+#lineup
+{
+    padding: 30px;
+}
+
+#lineup header
+{
+    margin: 0px auto;
+    margin-bottom: 0px;
+}
+
+#lineup_list 
+{
+    margin: 0px auto;
+    max-width: 1000px;
+}
+
+#lineup_list article
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    max-width: 750px;
+    margin: 15px auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+#lineup_list article > img
+{
+    -o-object-fit: cover;
+       object-fit: cover;
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+
+#lineup article .details
+{
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
+    padding: 25px;
+    margin: auto;
+}
+
+#lineup article .details h4
+{
+    display: block;
+    margin: 15px 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/****************** PLAN *************************/
+
+#planvisit
+{
+    background-color: #005AA8;
+    padding: 30px;
+}
+
+#planvisit header
+{
+    margin: 10px auto;
+    margin-bottom: 0px;
+    padding-bottom: 25px;
+    color: white;
+}
+
+#services
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+#services .card
+{
+    text-align: center;
+    background-color: white;
+    max-width: 200px;
+    margin: 20px;
+    padding: 20px 25px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .5);
+            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .5);
+}
+
+#services .card h4
+{
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+#services .card p 
+{
+    font-size: 11px;
+    color: gray;
+}
+
+/****************** NEWS *************************/
+
+#news header p
+{
+    color: gray;
+}
+
+#newsreel
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+
+    max-height: 500px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+#newsreel article
+{
+    -ms-flex-preferred-size: 500px;
+        flex-basis: 500px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    margin: 0px;
+    max-width: 500px;
+    min-height: 450px;
+    color: gray;
+    margin: 10px;
+    -webkit-box-shadow: 0px 0px 2px gray;
+            box-shadow: 0px 0px 2px gray;
+    -webkit-transform: scale(.90);
+        -ms-transform: scale(.90);
+            transform: scale(.90);
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    -o-transition: transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+}
+
+#newsreel article > img
+{
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 200px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+
+#newsreel article h4
+{
+    display: inline-block;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 15px 0px;
+}
+
+#newsreel article .details
+{
+    -ms-flex-preferred-size: 240px;
+        flex-basis: 240px;
+    padding: 15px 30px;
+    margin: auto;
+}
+
+#articleSelector
+{
+    text-align: center;
+}
+
+.dot 
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: background-color 0.6s ease;
+    -o-transition: background-color 0.6s ease;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover 
+{
+    background-color: #717171;
+}
+
+
+/****************** CALLOUT **********************/
+
+#callout .details
+{
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.5)), to(rgba(0,0,0,.5))),
+                url("./images/phone-unsplash.jpg") no-repeat;
+    background: -webkit-linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+                url("./images/phone-unsplash.jpg") no-repeat;
+    background: -o-linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+                url("./images/phone-unsplash.jpg") no-repeat;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+                url("./images/phone-unsplash.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin: 5%;
+    padding: 10% 15%;
+}
+
+
+/****************** FOOTER ***********************/
+footer .main
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    background-color: #12151A;
+    color: #505964;
+    padding: 5%;
+    font-size: 12px;
+}
+
+
+footer .main h4
+{
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+    font-weight: 400;
+    color: white;
+    font-size: 35px;
+    margin: 10px;
+    margin-right: 50px;
+}
+
+footer a:visited, footer a
+{
+    color: #505964;
+}
+
+
+#links
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-flex: 3;
+        -ms-flex: 3 1 200px;
+            flex: 3 1 200px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1200px;
+}
+
+#links ul
+{
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 150px;
+            flex: 0 1 150px;
+    margin: 10px;
+}
+
+#links > div
+{
+    -ms-flex-preferred-size: 155px;
+        flex-basis: 155px;
+    margin: 10px;
+}
+
+#credits
+{
+    font-size: 10px;
+    background-color: #0C0D11;
+    color: #4F5562;
+    padding: 15px 5%;
+}
+
+#credits > p
+{
+    margin: 10px;
+}
+
+
+/*********** MEDIA QUERIES *****************/
+
+@media screen and (min-width: 600px)
+{
+
+    #banner
+    {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    #banner_links
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin: 0px;
+        width: 375px;
+    }
+
+    #banner_links img
+    {
+        margin: 25px;
+        margin-left: 0px;
+        -ms-flex-preferred-size: 50px;
+            flex-basis: 50px;
+    }
+
+    #banner_links a
+    {
+        display: initial;
+    }
+
+    h3
+    {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 900px)
+{
+
+    #banner_btns
+    {
+        display: initial;
+    }
+
+    #hero .details
+    {
+        position: absolute;
+        top: 35%;
+        left: 35%;
+        color: white;
+    }
+
+    h2
+    {
+        display: block;
+        font-size: 75px;
+        margin: 0;
+    }
+
+    h3
+    {
+        font-size: 80px;
+    }
+
+    #featured_images
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        max-height: 850px;
+    }
+
+    #lineup_list article > img
+    {
+        -o-object-fit: contain;
+           object-fit: contain;
+    }
+
+    #lineup_list article:nth-child(even)
+    {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-flow: row-reverse;
+                flex-flow: row-reverse;
+    }
+}

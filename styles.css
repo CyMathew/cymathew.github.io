@@ -206,9 +206,14 @@ a#down_arrow
 	border-top-right-radius: 3px;
 }
 
-.card h3, .card p, .card ul
+.card h3, .card p
 {
     padding: 0px 10px;
+}
+
+.card ul
+{
+    padding: 0px 10px 5px;
 }
 
 

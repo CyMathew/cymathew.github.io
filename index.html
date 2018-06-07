@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Cyril Mathew's portfolio and projects">
     <title>Cyril Mathew</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -78,6 +79,15 @@
                     <p>Demo project based on a Photoshop mockup</p>
                 </div>
             </div>
+
+            <div class="card" id="mifestival">
+                <img src="mifestival_screenshot_preview.png" alt="Mifestival Screenshot">
+                <div class="cardContent">
+                    <h3 class="cardTitle">Mifestival</h3>
+                    <p>Demo project based on a Photoshop mockup</p>
+                </div>
+            </div>
+
             <div class="card" id="react_todolist">
                 <img src="react_todolist_screenshot_small.png" alt="React TodoList image">
                 <div class="cardContent">
@@ -128,6 +138,11 @@
         var archiCard = document.getElementById('archico_project');
         archiCard.onclick = () => {
             window.location.href="./portfolio/demo_projects/archico.html";
+        }
+
+        var mifesCard = document.getElementById('mifestival');
+        mifesCard.onclick = () => {
+            window.location.href="./portfolio/demo_projects/mifestival.html";
         }
         
         var todoCard = document.getElementById('react_todolist');
