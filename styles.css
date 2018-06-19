@@ -316,82 +316,13 @@ a#down_arrow
     background-color: rgba(255,255,255,0.9);
 }
 
-#modal
-{
-    display: none;
-    position: fixed;
-    /* visibility: hidden; */
-    /* opacity: 0; */
-    top:0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .9);
-    /* transition: opacity 1s; */
-}
-
 .show
 {
     opacity: 1;
 }
 
-#modalContent
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-}
 
-#modal form
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    margin: auto;
-    width: 30%;
-}
 
-#modal form input, #modal form button, textarea
-{
-    font-family: 'Varela Round', sans-serif;
-    margin: 5px;
-}
-
-#modal input
-{
-    width: 45%;
-}
-
-#modalContent button
-{
-    width: 25%;
-    padding: 5px;
-    background-color: green;
-    border: none;
-    color: rgba(255, 255, 255, .7);
-    border-radius: 5px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-}
-
-#closeModal
-{
-    font-size: 2.5rem;
-    color: white;
-    position: absolute;
-    top: 10%;
-    left: 80%;
-    border: none;
-    background-color: rgba(0, 0, 0, 0)
-}
 
 footer
 {

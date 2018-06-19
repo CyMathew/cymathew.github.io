@@ -35,7 +35,7 @@
         <a href="#about" id="down_arrow"></a>
     </div>
 
-    <div id="about">
+    <section id="about">
         <h2>About</h2>
         <div class="content">
             <div class="card">
@@ -67,9 +67,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="portfolio">
+    <section id="portfolio">
         <h2>My Work</h2>
         <div class="content">
             <div class="card" id="archico_project">
@@ -103,29 +103,39 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="contact">
+    <section id="contact">
         <h2>Contact Me</h2>
         <div class="content">
             <h3>Like what you see?</h3>
             <p>I'd love to hear from you and discuss how I could help you </p>
-            <button id="contact_btn">Let's talk</button>
+            <script type="text/javascript" language="javascript">
+                // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+                // Random encryption key feature coded by Andrew Moulden
+                // This code is freeware provided these four comment lines remain intact
+                // A wizard to generate this code is at http://www.jottings.com/obfuscator/
 
-            <div id="modal">
-                <div id="modalContent">
-                    <form action="mail.php" method="POST">
-                        <input type="text" name="name" aria-label="name" placeholder="Name" required>
-                        <input type="text" name="email" aria-label="email" placeholder="Email" required>
-                        <input type="tel" name="phone" aria-label="phone" placeholder="Phone Number">
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here"></textarea>
-                        <button>Submit</button>
-                    </form>
-                </div>
-                <button id="closeModal">&times;</button>
-            </div>
+                { coded = " glvHOroUpsx@dPUOdd0.gdr"
+                  key = "8AGn79QEvSo2HOwKJzutcfmFqMLykBTjNYd4hexXVIPUgZrCa6il03RW5D1bps"
+                  shift=coded.length
+                  link=""
+                  for (i=0; i<coded.length; i++) {
+                    if (key.indexOf(coded.charAt(i))==-1) {
+                      ltr = coded.charAt(i)
+                      link += (ltr)
+                    }
+                    else {     
+                      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                      link += (key.charAt(ltr))
+                    }
+                  }
+                document.write("<a id='contact_btn' href='mailto:"+link+"'>"+"Let's talk"+"</a>")
+                }
+            </script>
+            <noscript>Sorry, you need Javascript on to email me.</noscript>
         </div>
-    </div>
+    </section>
 
     <footer>
         <p>Site designed & built by Cyril Mathew</p>
@@ -147,7 +157,7 @@
         
         var todoCard = document.getElementById('react_todolist');
         todoCard.onclick = () => {
-            window.location.href="./portfolio/demo_projects/react_todolist/todolist.html";
+            window.location.href="cymathew.github.io/react_todolist";
         }
 
         var avaCard = document.getElementById('ava');
@@ -155,12 +165,6 @@
         {
             window.location.href="./portfolio/freelance/ava/ava.html";
         }
-
-        var contactButton = document.getElementById('contact_btn');
-        var contactModal = document.querySelector("#modal");
-        var closeModalButton = document.querySelector("#closeModal");
-        contactButton.onclick = () => (contactModal.style.display = "block");
-        closeModalButton.onclick = () => (contactModal.style.display = "none");
 
 
         $("a").click(function() {
